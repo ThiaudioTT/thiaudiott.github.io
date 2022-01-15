@@ -1,26 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*
+responsive:*/
+/* @media only screen and (max-device-width: 900px) { 
+} */
+
+header {
+    margin: 0 auto 50px auto;
 }
 
-
-
-
-
-/* body {
-    background-color: #0e1111;
+table{
+    margin: 0 auto;
 }
 
-.centro {
-    display: block;
+.central{
     margin-left: auto;
     margin-right: auto;
+    width: 6em;
 }
 
-#main {
-    color: aliceblue;
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+
+    /* margin-bottom: 370px; */
+
     text-align: center;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif
-} */
+}
+
+footer {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    text-align: center;
+}
