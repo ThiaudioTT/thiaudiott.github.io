@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -13,59 +14,76 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/icons/remixicon.css">
     <title>ThiaudioTT</title>
-
 </head>
 
 <body>
-    <div>
-        <!-- nav -->
-        <h1 class="central"><a href="/">ThiaudioTT</a></h1>
-        <header>
-            <table width="250" height="5" border="1px">
-                <tr>
-                    <th>
-                        <a href="/">Home</a>
-                    </th>
+    <!-- START NAV -->
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
 
-                    <th>
-                        <a href="#">Math</a>
-                    </th>
-                    
-                    <th>
-                        <a href="aboutme.html">About me</a>
-                    </th>
+    </nav>
+    <!-- END NAV -->
 
-                </tr>
-            </table>
-        </header>
-    </div>
-    
 
-    <!-- content -->
-    <div class="content">
-        <p>
-            Welcome to my website! (UNDER CONSTRUCTION)
-            <br>
-            <a href="https://youtu.be/mk1Rz8dBl4Y?t=44">Click here!</a>
+    <!-- WELCOME SECTION  -->
+    <section id="welcome-section">
+        <!-- <div class="welcome-box">
+        </div> -->
+        <h1>ThiaudioTT</h1>
+        <p>Fullstack developer</p>
+    </section>
 
-        </p>
-        <img src="assets/images/polka-hololive-polka.gif" width="250" alt="polka-gif">
-    </div>
+    <!-- END WELCOME SECTION  -->
 
+    <!-- PROJECTS  -->
+    <section id="projects">
+        <h2>Some of my projects</h2>
+        <div id="projects-box">
+
+            <div class="project-tile">
+                <img src="assets/images/choppsario.png">
+                <p>Pizzaria website</p>
+            </div>
+
+            <div class="project-tile">
+                <img src="assets/images/surveyform.png">
+                <p>Survey Form</p>
+            </div>
+
+            <div class="project-tile">
+                <img src="assets/images/technicaldoc.png">
+                <p>Technical documentation</p>
+            </div>
+
+            <div class="project-tile">
+                <img src="assets/images/tributepage.png">
+                <p>Tribute page</p>
+            </div>
+        </div>
+
+        <a target="_blank" href="projects.html">Show more..</a>
+    </section>
+    <!-- END PROJECTS  -->
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-item">
+            <i class="ri-github-line"></i>
+            <a href="https://github.com/ThiaudioTT" target="_blank">Github</a>
+        </div>
+
+        <div class="contact-item">
+            <i class="ri-external-link-line"></i>
+            <a href="https://linktr.ee/thiaudiott" target="_blank">Linktree</a>
+        </div>
+    </section>
 
 
 </body>
-
-
-<!-- footer -->
-<footer>
-    <table width="250" height="5">
-        <tr>
-            <th><a href="https://github.com/ThiaudioTT">Github</a></th>
-        </tr>
-    </table>
-</footer>
 
 </html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --cyan: #06BEE1;
+    --sapphire-blue: #1768AC;
+    --bluedark: #03256C;
+    --french-sky: #87bfff;
+    --dark-purple: #2f0a28;
+    --jet: #353238;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--white);
+}
+
+section {
+    font-family: 'Baloo 2', cursive;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    top: 0;
+    background-color: var(--bluedark);
+    padding: 10px 25px;
+}
+
+#navbar a {
+    color: var(--white);
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* ABOUT */
+#welcome-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+        url("assets/images/misaki.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section h1 {
+    font-size: 5rem;
+}
+
+#welcome-section p {
+    font-size: 1.5rem;
+}
+
+/* Projects */
+#projects {
+    background-color: var(--dark-purple);
+    text-align: center;
+}
+
+#projects-box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 300px 300px;
+}
+
+#projects-box img {
+    width: 50%;
+}
+
+#contact {
+    background-color: var(--jet);
+
+}
