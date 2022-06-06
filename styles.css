@@ -16,8 +16,9 @@
     padding: 0;
 }
 
-body {
+body, a {
     color: var(--white);
+    text-decoration: none;
 }
 
 section {
@@ -45,6 +46,10 @@ h1, h2 {
     font-size: 1.5rem;
     font-style: italic;
     text-decoration: none;
+}
+
+#navbar a:hover {
+    color: antiquewhite ;
 }
 
 /* ABOUT */
@@ -77,17 +82,56 @@ h1, h2 {
     text-align: center;
 }
 
+#projects h2 {
+    text-decoration: underline;
+    padding-top: 2rem;
+    margin-bottom: 2.5rem;
+    
+    font-size: 2.5rem;
+}
+
 #projects-box {
     display: grid;
     justify-content: center;
-    grid-template-columns: 600px 600px;
-    grid-template-rows: 300px 300px;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 320px)); */ /*I will put this in responsive media query*/
+    grid-template-columns: repeat(2, minmax(100px, 320px));
+    grid-gap: 1rem;
 }
 
 #projects-box img {
-    width: 50%;
+    object-fit: cover;
+    width: 100%;
 }
 
+.project-tile {
+    border: 1px white solid;
+    background-color: var(--jet);
+}
+
+.project-tile:hover {
+    background-color: var(--cyan);
+    transition-duration: 1s;
+}
+
+#showMore {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#showMore a {
+    border: 1px solid white;
+    background-color: var(--jet);
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#showMore a:hover {
+    background: var(--cyan);
+    transition-duration: 0.6s;
+}
+
+/* CONTACT  */
 #contact {
     background-color: var(--jet);
 
