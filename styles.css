@@ -4,9 +4,7 @@
 :root {
     --white: #FFFFFF;
     --cyan: #06BEE1;
-    --sapphire-blue: #1768AC;
     --bluedark: #03256C;
-    --french-sky: #87bfff;
     --dark-purple: #2f0a28;
     --jet: #353238;
 }
@@ -16,7 +14,8 @@
     padding: 0;
 }
 
-body, a {
+body,
+a {
     color: var(--white);
     text-decoration: none;
 }
@@ -25,7 +24,8 @@ section {
     font-family: 'Baloo 2', cursive;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -49,7 +49,7 @@ h1, h2 {
 }
 
 #navbar a:hover {
-    color: antiquewhite ;
+    color: antiquewhite;
 }
 
 /* ABOUT */
@@ -62,6 +62,8 @@ h1, h2 {
     height: 100%;
     height: 100vh;
 
+    cursor: context-menu;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,6 +71,7 @@ h1, h2 {
 }
 
 #welcome-section h1 {
+    text-shadow: 2px 2px 1px #1f1f1f;
     font-size: 5rem;
 }
 
@@ -86,14 +89,15 @@ h1, h2 {
     text-decoration: underline;
     padding-top: 2rem;
     margin-bottom: 2.5rem;
-    
+
     font-size: 2.5rem;
 }
 
 #projects-box {
     display: grid;
     justify-content: center;
-    /* grid-template-columns: repeat(auto-fit, minmax(100px, 320px)); */ /*I will put this in responsive media query*/
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 320px)); */
+    /*I will put this in responsive media query*/
     grid-template-columns: repeat(2, minmax(100px, 320px));
     grid-gap: 1rem;
 }
@@ -114,8 +118,9 @@ h1, h2 {
 }
 
 #showMore {
-    margin-top: 2rem;
-    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    padding-bottom: 10rem;
 }
 
 #showMore a {
@@ -134,5 +139,40 @@ h1, h2 {
 /* CONTACT  */
 #contact {
     background-color: var(--jet);
+    /* height: 70vh; */
+    text-align: center;
+}
 
+#contact h2 {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 3rem;
+}
+
+.contact-flex {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-flex a {
+    transition: transform 0.3s ease-out;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+.contact-flex a:hover {
+    transform: translateY(8px);
+}
+
+
+@media only screen and (max-width: 680px) {
+    #projects-box {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 320px));
+    }
 }
