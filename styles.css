@@ -170,7 +170,6 @@ h2 {
     transform: translateY(8px);
 }
 
-
 @media only screen and (max-width: 680px) {
     #projects-box {
         grid-template-columns: repeat(auto-fit, minmax(100px, 320px));
