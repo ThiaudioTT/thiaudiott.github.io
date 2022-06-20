@@ -1,61 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
-
-:root {
-    --white: #FFFFFF;
-    --cyan: #06BEE1;
-    --bluedark: #03256C;
-    --dark-purple: #2f0a28;
-    --jet: #353238;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body,
-a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-section {
-    font-family: 'Baloo 2', cursive;
-}
-
-h1,
-h2 {
-    font-family: 'Oswald', sans-serif;
-}
-
-/* navbar */
-#navbar {
-    display: flex;
-    justify-content: end;
-    position: sticky;
-    top: 0;
-    background-color: var(--bluedark);
-    padding: 10px 25px;
-}
-
-#navbar a {
-    color: var(--white);
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 1.5rem;
-    font-style: italic;
-    text-decoration: none;
-}
-
-#navbar a:hover {
-    color: antiquewhite;
-}
-
 /* ABOUT */
 #welcome-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-        url("assets/images/misaki.png");
+        url("../assets/images/misaki.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
